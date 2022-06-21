@@ -34,3 +34,26 @@ testing {
         }
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/juapalesp/Junio2022/tree/arreglosJunio")      
+            credentials {
+                username = "juapalesp"
+                password = "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" //la contraseña se corresponde con el token generado
+                }
+        }
+    publications {
+        gpr(MavenPublication) {       
+            groupId = 'examen'
+            artifactId = 'examenJunio'
+            version = '0.0.1-juapalesp' //aquí se especifica que se sube a la versión 0.0.1-juapalesp.
+
+            from components.java
+        }
+       
+    }
+}
+    }
