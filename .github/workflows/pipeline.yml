@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Construyendo y probando el código
         run: |
-          chmod +x gradlew        
+          chmod +x gradlew
           ./gradlew build
       - name: Mostrando uvus por pantalla
-        - run: echo "juapalesp."
+        run: echo "juapalesp."
   Test:
     runs-on: ubuntu-latest
 needs: Build
@@ -29,4 +29,4 @@ needs: Build
           chmod +x gradlew        
           ./gradlew test
       - name: Mostrando uvus por pantalla
-        - run: echo "juapalesp."
+        run: echo "juapalesp."
