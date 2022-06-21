@@ -1,4 +1,4 @@
-name: Flujo de trabajo para las tareas de construcción y test
+name: Flujo de trabajo para las tareas de construcción y test y publicacion
 on:
   workflow_dispatch:
   push:
