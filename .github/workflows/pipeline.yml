@@ -19,7 +19,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
 needs: Build
-    env:
+  env:
       GITHUB_LOGIN: ${{ github.actor }}
       GITHUB_PACKAGES: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
